@@ -1,0 +1,13 @@
+<%= form_for(@user, url: new_path) do |f| %>
+    <p class="test">ユーザー名</p>
+    <%= f.text_field :name %>
+
+    <p>メールアドレス</p>
+    <%= f.email_field :email %>
+    
+    <p>パスワード</p>
+    <%= f.password_field :password %>
+
+    <%= f.submit "登録" %>
+
+<% end %>
